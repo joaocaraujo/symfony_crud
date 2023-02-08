@@ -7,12 +7,12 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
- * Route("/api/v1", name="api_v1_")
+ * @Route("/api/v1", name="api")
  */
-class UserController
+class UsersController
 {
     /**
-     * @Route("/list", methods={"GET"} name="list")
+     * @Route("/list", methods={"GET"})
      */
     public function list(): JsonResponse
     {
@@ -20,7 +20,7 @@ class UserController
     }
 
     /**
-     * @Route("/register", methods={"POST"}, name="register")
+     * @Route("/register", methods={"POST"})
      */
 
     public function register(): Response
