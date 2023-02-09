@@ -1,0 +1,25 @@
+.body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: rgb(102, 194, 255);
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    height: 150px;
+    margin-left: 10px;
+  }
+
+.msgErro {
+    font-size: 25px;
+    color: red;
+}
+
+.msgSuccess {
+    font-size: 25px;
+    color: green;
+}

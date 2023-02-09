@@ -1,0 +1,23 @@
+{% extends "base.html.twig" %}
+
+{% block title %}User Register{% endblock %}
+
+{% block header %}
+    <div class="header">
+        <img src="{{ asset('img/uppe.png') }}"/>
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}"/>
+{% endblock %}
+
+{% block body %}
+<form method="POST" action="/save">
+  <input type="text" id="name" name="name" placeholder="Yuri Martins" required>
+  <input type="email" id="email" name="email" placeholder="yurim@gmail.com" required>
+  <input type="password" id="password" name="password" placeholder="123456" required>
+
+  <button type="submit">Save</button>
+</form>
+{% endblock %}
